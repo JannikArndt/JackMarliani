@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jack Marliani - Yoga Teacher</title>  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #7FA6CE, #F4E0B6);
+      text-align: center;
+    }
+
+    img {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 10px;
+      box-sizing: border-box;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    
+    .email {
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  
+    .email:hover {
+      text-decoration: underline;
+    }
+  </style>
+  <script>
+    function getEmailAddress() {
+      var user = "yoga";
+      var domain = "jackmarliani.com";
+
+      document.getElementById("email").innerHTML = '<a href="mailto:' + user + '@' + domain + '" class="email">' + user + '@' + domain + '</a>';
+    }
+  </script>
+</head>
+<body onload="getEmailAddress()">
+  <img src="sirsasana.jpg" alt="Jack Marliani" />
+  <div class="overlay">
+    Jack Marliani<br />
+    Yoga teacher (RYT&reg; 200)<br />
+    <span id="email"></span>
+  </div>
+</body>
+</html>
